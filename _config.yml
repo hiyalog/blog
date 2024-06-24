@@ -114,7 +114,7 @@ analytics:
 author:
   name             : "J.H.S" # "Your Name"
   avatar           : "/assets/images/bio-photo.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
+  bio              : "Again" # "I am an **amazing** person."
   location         : "Somewhere"
   email            :
   links:
