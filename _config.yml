@@ -113,7 +113,7 @@ analytics:
 # Site Author
 author:
   name             : "J.H.S" # "Your Name"
-  avatar           : "/assets/images/bio-photo.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/flower1.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Again" # "I am an **amazing** person."
   location         : "Somewhere"
   email            :
