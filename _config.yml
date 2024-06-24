@@ -19,7 +19,7 @@ locale                   : "en-US"
 title                    : "Hiya Log" # "Site Title"
 title_separator          : "-"
 subtitle                 : "Happy Life" # site tagline that appears below site title in masthead
-name                     : "Your Name"
+name                     : "J.H.S" # "Your Name"
 description              : "An amazing website."
 url                      : "https://hiyalog.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
