@@ -300,6 +300,14 @@ tag_archive:
 #     category: /categories/:name/
 #     tag: /tags/:name/
 
+ jekyll-archives:
+   enabled:
+     - categories
+   layouts:
+     category: archive-taxonomy
+   permalinks:
+     category: /_posts/:name/
+
 # HTML Compression
 # - https://jch.penibelst.de/
 compress_html:
