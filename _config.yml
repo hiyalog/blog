@@ -284,7 +284,7 @@ whitelist:
 #  - <base_path>/my-awesome-category/index.html ~> path: /
 category_archive:
   type: liquid
-  path: /categories/
+  path: /_posts/
 tag_archive:
   type: liquid
   path: /tags/
@@ -299,14 +299,6 @@ tag_archive:
 #   permalinks:
 #     category: /categories/:name/
 #     tag: /tags/:name/
-
- jekyll-archives:
-   enabled:
-     - categories
-   layouts:
-     category: archive-taxonomy
-   permalinks:
-     category: /_posts/:name/
 
 # HTML Compression
 # - https://jch.penibelst.de/
