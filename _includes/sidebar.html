@@ -15,12 +15,12 @@
       {% include nav_list nav=page.sidebar.nav %}
     {% endif %}
   {% endif %}
-  </div>
 
   <ul>
     {% for category in site.categories %}
-      <li>>{{ category | first }}</li
+      <li>>{{ category|first }}({{category|last|size}})</li>
     {% endfor %}
   </ul>
-
+    
+  </div>
 {% endif %}
