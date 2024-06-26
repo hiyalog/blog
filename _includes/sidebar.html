@@ -16,9 +16,13 @@
     {% endif %}
   {% endif %}
 
+  <div>
+    = Category =
+  </div>
+
   <ul>
     {% for category in site.categories %}
-      <li>>{{ category|first }}({{category|last|size}})</li>
+      <li>{{ category|first }}({{category|last|size}})</li>
     {% endfor %}
   </ul>
     
