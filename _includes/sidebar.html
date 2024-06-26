@@ -17,10 +17,10 @@
   {% endif %}
   </div>
 
-  <div>
+  <ul>
     {% for category in site.categories %}
-      {{ category }}
+      <li>>{{ category | first }}</li
     {% endfor %}
-  </div>
+  </ul>
 
 {% endif %}
