@@ -25,6 +25,9 @@
 #    {% endfor %}
 #  </ul>
 
+  {% if(page.sidebar_category) %}
+    {% include nav_list_category.html %}
+  {% endif %}
 
     
   </div>
