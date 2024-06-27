@@ -1,10 +1,10 @@
 ---
-title: "Coding Record"
+title: "Blog 기록"
 layout: archive
-permalink: categories/coding
+permalink: categories/blog
 author_profile: true
 sidebar_category: true
 ---
 
-{% assign posts = site.categories['coding'] %}
+{% assign posts = site.categories['blog'] %}
 {% for post in posts %} {% include archive-single2.html type=page.entries_layout %} {% endfor %}
