@@ -4,12 +4,17 @@
   <input id="ac-toc" name="accordion-toc" type="checkbox" />
   <label for="ac-toc">{{ site.data.ui-text[site.locale].menu_label }}</label>
   <ul class="nav__items" id="category_tag_menu">
-    <li><span style="font-family:'Cafe24Oneprettynight';">Total Post Count:</span> <span style="font-family:'Coming Soon';">{{sum}}</span> <span style="font-family:'Cafe24Oneprettynight';">개</span></li>
-    <li><span class="nav__sub-title">Coding Test</span></li>
-  {% for category in site.categories %}
-    {% if category[0] == "blog" %}
-      <li><a href="#" class="">Blog ({{category[1].size}})</a></li>
-    {% endif %}
-  {% endfor %}
-  </ul>
+      <li>
+        <span style="font-family:'Cafe24Oneprettynight';">Total Post Count (</style> <span style="font-family:'Coming Soon';">{{sum}}</style><span style="font-family:'Cafe24Oneprettynight';">)</style> 
+      </li>
+      <li>
+        <span class="nav__sub-title">Coding Test</span>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "blog" %}
+                        <li><a href="#" class="">Blog ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+      </li>
 </nav>
