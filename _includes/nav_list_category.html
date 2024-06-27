@@ -8,11 +8,18 @@
         <span style="font-family:'Cafe24Oneprettynight';">Total Post Count (</span><span style="font-family:'Coming Soon';">{{sum}}</span><span style="font-family:'Cafe24Oneprettynight';">)</span>
       </li>
       <li>
-        <span style="font-family:'Cafe24Oneprettynight';">Coding Test</span>
+        <span style="font-family:'Cafe24Oneprettynight';">My Life</span>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "blog" %}
                         <li><a href="/blog/categories/blog" class="">Blog ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "daily" %}
+                        <li><a href="/blog/categories/blog" class="">Daily ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
