@@ -1,13 +1,12 @@
 {% assign sum = site.posts | size %}
-<div>
-  Total Post: {{sum}} 개
-<div>
-  <ul>
-      <li>Coding Test</li>
+<nav class="nav__list">
+  <ul class="nav__items" id="category_tag_menu">
+    <li>Total Post Count: {{sun}} 개</li>
+    <li>Coding Test</li>
   {% for category in site.categories %}
     {% if category[0] == "blog" %}
       <li><a href="/categories/cpp" class="">Blog ({{category[1].size}})</a></li>
     {% endif %}
   {% endfor %}
   </ul>
-</div>
+</nav>
