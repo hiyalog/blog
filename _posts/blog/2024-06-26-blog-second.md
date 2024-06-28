@@ -8,3 +8,4 @@ categories:
 blog에 category 를 추가 합니다.
 
 지금 위치는 blog category 입니다.
+:memo: 메모 입니다.
