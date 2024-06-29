@@ -8,10 +8,10 @@ search: false
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
 
-// "Ownglyph_ryuttung-Rg"
+// MaplestoryOTFBold
 @font-face {
-    font-family: 'Ownglyph_ryuttung-Rg';
-    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2405-2@1.0/Ownglyph_ryuttung-Rg.woff2') format('woff2');
+    font-family: 'MaplestoryOTFBold';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/MaplestoryOTFBold.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
