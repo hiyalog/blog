@@ -13,14 +13,14 @@
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "blog" %}
-                        📂 <li style="font-family:'Ownglyph_UNZ-Rg'; font-size:1em; margin-top:5px; margin-left:10px"><a href="/blog/categories/blog" class="">Blog ({{category[1].size}})</a></li>
+                        <li style="font-family:'Ownglyph_UNZ-Rg'; font-size:1em; margin-top:10px; margin-left:10px">📂 <a href="/blog/categories/blog" class="">Blog ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "daily" %}
-                        📂 <li style="font-family:'Ownglyph_UNZ-Rg'; font-size:1em; margin-top:5px; margin-left:10px"><a href="/blog/categories/daily" class="">Daily ({{category[1].size}})</a></li>
+                        <li style="font-family:'Ownglyph_UNZ-Rg'; font-size:1em; margin-top:10px; margin-left:10px">📂 <a href="/blog/categories/daily" class="">Daily ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
