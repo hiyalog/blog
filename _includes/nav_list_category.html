@@ -5,22 +5,22 @@
   <label for="ac-toc">{{ site.data.ui-text[site.locale].menu_label }}</label>
   <ul class="nav__items">
       <li style="margin-bottom: 5px">
-        <span style="font-family:'MaplestoryOTFBold'; font-size:1em">:deciduous_tree: Toal Post ({{sum}})</span>
+        <span style="font-family:'Ownglyph_UNZ-Rg'; font-size:1em">🌳 Toal Post ({{sum}})</span>
       </li>
       <li>
-        <span style="font-family:'MaplestoryOTFBold'; font-size:1.5em">:label: My Life</span>
+        <span style="font-family:'Ownglyph_UNZ-Rg'; font-size:1.5em">🏷️ My Life</span>
             <hr style="border-width:1px 0px 0px 0px; border-style:solid; height:1px; margin:0px; padding:0px" />
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "blog" %}
-                        <li style="font-family:'MaplestoryOTFBold'; font-size:1em">:file_folder: <a href="/blog/categories/blog" class="">Blog ({{category[1].size}})</a></li>
+                        <li style="font-family:'Ownglyph_UNZ-Rg'; font-size:1em">📁 <a href="/blog/categories/blog" class="">Blog ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "daily" %}
-                        <li style="font-family:'MaplestoryOTFBold'; font-size:1em">:file_folder: <a href="/blog/categories/daily" class="">Daily ({{category[1].size}})</a></li>
+                        <li style="font-family:'Ownglyph_UNZ-Rg'; font-size:1em">📁 <a href="/blog/categories/daily" class="">Daily ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
