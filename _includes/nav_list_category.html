@@ -23,14 +23,20 @@
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "blog" %}
-                        <li><span style="font-size:0.7em">📂</span><a href="/blog/categories/blog" class=""><span style="font-family:'Ownglyph_UNZ-Rg'; font-size:1em; margin-top:5px; margin-left:10px">Blog ({{category[1].size}})</span></a></li>
+                        <li>
+                          <span style="font-size:1.5em">📂</span>
+                          <a href="/blog/categories/blog" class=""><span style="font-family:'Ownglyph_UNZ-Rg'; font-size:1em; margin-top:5px; margin-left:10px">Blog ({{category[1].size}})</span></a>
+                        </li>
                     {% endif %}
                 {% endfor %}
             </ul>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "daily" %}
-                        <li><span style="font-size:0.7em">📂</span><a href="/blog/categories/daily" class=""><span style="font-family:'Ownglyph_UNZ-Rg'; font-size:1em; margin-top:5px; margin-left:10px">Daily ({{category[1].size}})</span></a></li>
+                        <li>
+                          <span style="font-size:0.7em">📂</span>
+                          <span style="font-family:'Ownglyph_UNZ-Rg'; font-size:1em; margin-top:5px; margin-left:10px"><a href="/blog/categories/daily" class="">Daily ({{category[1].size}})</a></span>
+                        </li>
                     {% endif %}
                 {% endfor %}
             </ul>
