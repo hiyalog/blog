@@ -4,30 +4,30 @@
   <input id="ac-toc" name="accordion-toc" type="checkbox" />
   <label for="ac-toc">{{ site.data.ui-text[site.locale].menu_label }}</label>
   <ul class="nav__items" id="category_tag_menu">
-      <li style="margin-bottom: 5px">
-        <span style="font-family:'Ownglyph_UNZ-Rg'; font-size:1em">🌳 Toal Post ({{sum}})</span>
+      <li style="margin-bottom: 0px">
+        <span style="font-family:'Ownglyph_UNZ-Rg'; font-size:1em">🌳 Total Post ({{sum}})</span>
       </li>
-      <li">
-            <span style="font-family:'Ownglyph_UNZ-Rg'; font-size:1.5em">Study</span>
+      <li>
+            <span style="font-family:'Ownglyph_UNZ-Rg'; font-size:1.5em">My Life</span>
             <hr style="border-width:1px 0px 0px 0px; border-style:solid; height:1px; margin:0px; padding:0px" />
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "program" %}
-                        <li><span style="font-size:0.7em">📂</span> <a href="/blog/categories/program" class=""><span style="font-family:'Ownglyph_UNZ-Rg'; font-size:1em; margin-top:5px; margin-left:10px">Program Code ({{category[1].size}})</span></a></li>
+                        <li><span style="font-size:0.7em">📂</span><a href="/blog/categories/program" class=""><span style="font-family:'Ownglyph_UNZ-Rg'; font-size:1em; margin-top:5px; margin-left:10px">Program Code ({{category[1].size}})</span></a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "blog" %}
-                        <li><span style="font-size:0.7em">📂</span> <a href="/blog/categories/blog" class=""><span style="font-family:'Ownglyph_UNZ-Rg'; font-size:1em; margin-top:5px; margin-left:10px">Blog ({{category[1].size}})</span></a></li>
+                        <li><span style="font-size:0.7em">📂</span><a href="/blog/categories/blog" class=""><span style="font-family:'Ownglyph_UNZ-Rg'; font-size:1em; margin-top:5px; margin-left:10px">Blog ({{category[1].size}})</span></a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "daily" %}
-                        <li><span style="font-size:0.7em">📂</span> <a href="/blog/categories/daily" class=""><span style="font-family:'Ownglyph_UNZ-Rg'; font-size:1em; margin-top:5px; margin-left:10px">Daily ({{category[1].size}})</span></a></li>
+                        <li><span style="font-size:0.7em">📂</span><a href="/blog/categories/daily" class=""><span style="font-family:'Ownglyph_UNZ-Rg'; font-size:1em; margin-top:5px; margin-left:10px">Daily ({{category[1].size}})</span></a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
