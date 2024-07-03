@@ -2,9 +2,9 @@
 layout: single
 title: "문자열 바꿔서 찾기"
 categories:
-  - coding
+  - programming
 tag:
-  - [python, programmers, program, coding]
+  - [python, programmers, program, programming, coding]
 ---
 
 ## 문자열 바꿔서 찾기  
