@@ -4,11 +4,11 @@
   <input id="ac-toc" name="accordion-toc" type="checkbox" />
   <label for="ac-toc">{{ site.data.ui-text[site.locale].menu_label }}</label>
   <ul class="nav__items" id="category_tag_menu">
-      <li style="margin-bottom: 0px">
+      <li style="margin-bottom: 10px">
         <span style="font-family:'Ownglyph_UNZ-Rg'; font-size:1em">🌱 Total Post ({{sum}})</span>
       </li>
       <li>
-            <span style="font-family:'Ownglyph_UNZ-Rg'; font-size:1.5em">CATEGORY</span>
+            <span style="font-family:'Ownglyph_UNZ-Rg'; font-size:1.5em;">카테고리</span>
             <hr style="border-width:1px 0px 0px 0px; border-style:solid; height:1px; margin:0px; padding:0px" />
             <ul>
                 {% for category in site.categories %}
