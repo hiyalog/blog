@@ -12,10 +12,10 @@
             <hr style="border-width:1px 0px 0px 0px; border-style:solid; height:1px; margin:0px; padding:0px" />
             <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "coding" %}
+                    {% if category[0] == "programming" %}
                         <li style="font-family:'Ownglyph_UNZ-Rg'; font-size:1em; margin-top:5px; margin-left:10px">
                           <span style="font-size:0.7em; margin-left:10px">📂</span>
-                          <a href="/blog/categories/coding" class="">Program Coding ({{category[1].size}})</a>
+                          <a href="/blog/categories/programming" class="">프로그래밍 ({{category[1].size}})</a>
                         </li>
                     {% endif %}
                 {% endfor %}
@@ -35,7 +35,7 @@
                     {% if category[0] == "daily" %}
                         <li style="font-family:'Ownglyph_UNZ-Rg'; font-size:1em; margin-top:5px; margin-left:10px">
                           <span style="font-size:0.7em; margin-left:10px">📂</span>
-                          <a href="/blog/categories/daily" class="">Daily ({{category[1].size}})</a>
+                          <a href="/blog/categories/daily" class="">일상(日常) ({{category[1].size}})</a>
                         </li>
                     {% endif %}
                 {% endfor %}
