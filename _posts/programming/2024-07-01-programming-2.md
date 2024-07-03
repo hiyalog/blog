@@ -2,9 +2,9 @@
 layout: single
 title: "배열 비교하기"
 categories:
-  - coding
+  - programming
 tag:
-  - [python, programmers, program, coding]
+  - [python, programmers, program, programming, coding]
 ---
 
 ## 배열 비교하기  
