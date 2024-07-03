@@ -1,5 +1,5 @@
 ---
-title: "Program Code"
+title: "Program Coding"
 layout: archive
 permalink: categories/coding
 author_profile: true
