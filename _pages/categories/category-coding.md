@@ -1,11 +1,11 @@
 ---
 title: "Program Code"
 layout: archive
-permalink: categories/program
+permalink: categories/coding
 author_profile: true
 sidebar_category: true
 ---
 
 
-{% assign posts = site.categories.program %}
+{% assign posts = site.categories.coding %}
 {% for post in posts %} {% include archive-single.html type=page.entries_layout %} {% endfor %}
