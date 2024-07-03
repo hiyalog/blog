@@ -2,9 +2,9 @@
 layout: single
 title: "A 강조하기"
 categories:
-  - coding
+  - programming
 tag:
-  - [python, programmers, program, coding]
+  - [python, programmers, program, programming, coding]
 ---
 
 ## A 강조하기
