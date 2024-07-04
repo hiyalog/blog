@@ -15,7 +15,11 @@ my_string 전체 길이에서 rfind()로 찾은 마지막 위치값을 빼면
 is_suffix 문자열이 오른쪽에서 몇번째 위치하는지 찾을 수 있다.
 이때 찾은 위치와 is_suffix 문자열의 길이와 같으면
 is_suffix 문자열이 my_string 문자열 마지막에 나오는 접미사 인지
-알수있다.
+알수있다.  
+
+<details>
+    <summary><span style="font-size:1.5em; font-weight:bold; color:#BA602B">프로그램 코드 보기</span></summary>
+    <div markdown="1">  
 
 ```python
 def solution(my_string, is_suffix):
@@ -30,3 +34,7 @@ def solution(my_string, is_suffix):
 
     return answer
 ```
+
+</div>
+</details>
+
