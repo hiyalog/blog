@@ -18,7 +18,8 @@ for 반복문을 사용하여 문자를 하나씩 읽어서 다시 숫자로 변
 더해주면 외계행성의 나이를 구할 수 있다.
 
 <details>
-<summary>**#소스 코드 보기**</summary>
+<summary>소스 코드 보기</summary>
+<div>  
   
 ```python
 def solution(age):
@@ -29,6 +30,6 @@ def solution(age):
         answer += chr(new_age)
     return answer
 ```
-
+</div>
 </details>
 
