@@ -25,9 +25,4 @@ def solution(n):
         answer = 2
 
     return answer
-
-n = 144
-#n = 976
-result = solution(n)
-print(result)
 ```
