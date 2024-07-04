@@ -11,7 +11,7 @@ tag:
 
 => 프로그램 코드를 보려면 아래를 클릭하세요.  
 <details>
-    <span style="font-size:1.5em; font-weight:bold; color:#2457BD"><summary>프로그램 코드 보기</summary></span>
+    <summary><span style="font-size:1.5em; font-weight:bold; color:#2457BD">프로그램 코드 보기</span></summary>
     <div markdown="1">  
       
 ```python
