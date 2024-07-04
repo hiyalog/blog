@@ -15,8 +15,11 @@ for 반복문을 사용하여 문자를 하나씩 읽어서 다시 숫자로 변
 97(소문자 a)를 더해주면 각각의 위치에 해당하는 알파벳 소문자 아스키 코드값을
 구할수 있다.  
 이렇게 구한 아스키 코드값을 chr() 함수로 다시 문자로 변환하여
-더해주면 외계행성의 나이를 구할 수 있다.
+더해주면 외계행성의 나이를 구할 수 있다.  
 
+<details>
+    <summary><span style="font-size:1.5em; font-weight:bold; color:#CC723D">프로그램 코드 보기</span></summary>
+    <div markdown="1">  
 
 ```python
 def solution(age):
@@ -27,5 +30,7 @@ def solution(age):
         answer += chr(new_age)
     return answer
 ```
+</div>
+</details>  
 
 
