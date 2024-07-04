@@ -9,6 +9,10 @@ tag:
 
 ## 문자열 바꿔서 찾기  
 
+<details>
+    <summary><div style="font-size:15px; font-weight:bold; color:#980000">소스코드 보기</div></summary>
+    <div markdown="1">  
+      
 ```python
 def solution(myString, pat):
     answer = 0
