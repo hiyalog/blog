@@ -10,7 +10,7 @@ tag:
 ## 문자열 바꿔서 찾기  
 
 <details>
-    <summary><div style="font-size:15px; font-weight:bold; color:#980000">소스코드 보기</div></summary>
+    <summary><span style="font-size:1.5em; font-weight:bold; color:#980000">소스코드 보기</span></summary>
     <div markdown="1">  
       
 ```python
@@ -31,6 +31,7 @@ def solution(myString, pat):
             
     return answer
 ```
-
+</details>  
+<br />
 문자열 바꾸기 함수 replace() 를 사용하여 바꾼 문자를 new_str에 넣고
 new_str 에 pat 문자가 있는지 비교
