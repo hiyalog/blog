@@ -11,7 +11,7 @@ tag:
 
 => 프로그램 코드를 보려면 아래를 클릭하세요.  
 <details>
-    <summary><span style="font-size:1.5em; font-weight:bold; color:#df4d4d">프로그램 코드 보기</span></summary>
+    <span style="font-size:1.5em; font-weight:bold; color:#2457BD"><summary>프로그램 코드 보기</summary></span>
     <div markdown="1">  
       
 ```python
@@ -32,9 +32,9 @@ def solution(myString, pat):
             
     return answer
 ```
-
+<br />
 </div>
-</details>  
+</details> 
 <br />
 문자열 바꾸기 함수 replace() 를 사용하여 바꾼 문자를 new_str에 넣고
 new_str 에 pat 문자가 있는지 비교
