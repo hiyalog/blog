@@ -12,7 +12,11 @@ tag:
 전체 피자 조각수(6)으로 나누어 나머지가 0이 될때 피자 조각수가
 1인당 먹은 피자조각수가 된다.
 그럼 전체 사람수 n * 1인당 먹은 피자수를 한뒤 // 연산자로 몫을 구하면
-피자가 몇판인지 구할수 있다.
+피자가 몇판인지 구할수 있다.  
+
+<details>
+    <summary><span style="font-size:1.5em; font-weight:bold; color:#BA602B">프로그램 코드 보기</span></summary>
+    <div markdown="1">  
 
 ```python
 def solution(n):
@@ -30,3 +34,8 @@ def solution(n):
     answer = (n * p) // pizza1
     return answer
 ```
+
+</div>
+</details>  
+
+
