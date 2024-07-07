@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "[Python] 외계행성의 나이"
+title: "[Python] 최댓값 만들기 (2)"
 categories:
   - programming
 tag:
