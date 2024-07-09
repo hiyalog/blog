@@ -27,7 +27,7 @@ def solution(s):
     answer = ''
     char_arr = []
     for i in s:
-        if s.count(i) == 1: # 문자갯수가 1일때문 배열에 추가
+        if s.count(i) == 1: # 문자갯수가 1일때만 배열에 추가
             char_arr.append(i) 
 
     char_arr.sort() # 사전 순으로 정렬
