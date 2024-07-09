@@ -31,7 +31,6 @@ def solution(s):
             char_arr.append(i)
 
     char_arr.sort()
-
     answer = "".join(char_arr)
     return answer
 ```
