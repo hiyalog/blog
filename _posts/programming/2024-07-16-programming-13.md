@@ -9,10 +9,10 @@ tag:
 
 ## 캐릭터의 좌표  
 
-맵의 크기인 board에 가로, 세로 좌표를 2로 나눈값이 이동할 수 있는 최대 거리 이다.  
+맵의 크기인 board에 가로, 세로 좌표값을 2로 나눈 몫이 이동할 수 있는 최대 거리 이다.  
 
 <details>
-    <summary><span style="font-size:1.5em; font-weight:bold; color:#BA602B">프로그램 코드 보기</span></summary>
+    <summary><span style="font-size:1.5em; font-weight:bold; color:#BA602B" onmouseover="this.style.cursor='hand'">프로그램 코드 보기</span></summary>
     <div markdown="1">  
 ```python
 def solution(keyinput, board):
@@ -21,6 +21,8 @@ def solution(keyinput, board):
     right = 1
     left = -1
     down = -1
+    width = 0
+    height = 0
 
     for i in keyinput:
         if i == 'left':
@@ -32,8 +34,8 @@ def solution(keyinput, board):
         else:
             answer[1] += down
 
-    width = int(board[0] / 2) # 가로 최대 크기
-    height = int(board[1] / 2) # 세로 최대 크기
+    width = board[0] // 2 # 가로로 이동할 수 있는 최대 거리
+    height = board[1] // 2 # 세로로 이동할 수 있는 최대 거리
     
     # 가로 체크
     if answer[0] < 0 and abs(answer[0]) > width:
