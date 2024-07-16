@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "캐릭터의 좌표"
+title: "[Python] 캐릭터의 좌표"
 categories:
   - programming
 tag:
