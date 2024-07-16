@@ -17,7 +17,7 @@ answer 배열을 리턴해준다.
 
 
 <details>
-    <summary><span style="font-size:1.5em; font-weight:bold; color:#BA602B">프로그램 코드 보기</span></summary>
+    <summary><span style="font-size:1.5em; font-weight:bold; color:#BA602B; cursor:pointer">프로그램 코드 보기</span></summary>
     <div markdown="1">   
 ```python
 def solution(s):
