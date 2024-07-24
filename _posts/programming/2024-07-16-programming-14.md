@@ -7,7 +7,9 @@ tag:
   - [python, programmers, program, programming, coding]
 ---
 
-## 등수 매기기  
+## 등수 매기기   
+
+![2024_22620_school programmers co kr](https://github.com/user-attachments/assets/b6d9838f-cfa8-414e-a49a-002dcb6c34e9)  
 
 각 학생의 영어, 수학 점수의 평균을 구해서 순서대로 배열에 넣고 2중 for 문으로
 학생의 평균값보다 작은값이 있으면 rank를 1 증가 시켜서 등수를 매긴다.  
