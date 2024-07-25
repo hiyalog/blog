@@ -30,11 +30,11 @@ tag:
 def solution(chicken):
     answer = -1
     service = chicken // 10 # 지금 가지고 있는 쿠폰으로 시킬수 있는 치킨의 수
-    coupon = service + (chicken % 10) # 서비스로 받은 닭쿠폰+남은 쿠폰
+    coupon = service + (chicken % 10) # 서비스로 받은 치킨쿠폰+남은 쿠폰
 
     while(coupon >= 10): # 쿠폰의 갯수가 10 이하면 whil 문을 종료 한다.
         service += coupon // 10
-        coupon = (coupon // 10) + (coupon % 10) # 서비스로 받은 닭쿠폰+남은 쿠폰
+        coupon = (coupon // 10) + (coupon % 10) # 서비스로 받은 치킨쿠폰+남은 쿠폰
     
     answer = service
     return answer
