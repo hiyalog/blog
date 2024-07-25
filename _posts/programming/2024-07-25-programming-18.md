@@ -26,10 +26,10 @@ for문 사용법에 따른 2가지 방법이 있다.
 2번째 방법은 len() 함수가 추가로 사용되고 각요소에 위치정보로 접근하여 코드가 조금더 복잡해 보인다. 
 <br />  
 <details>
-    <summary><span style="font-size:1.5em; font-weight:bold; color:#BA602B; cursor:pointer">프로그램 코드 보기</span></summary>
-    <div markdown="1">   
+    <summary><span style="font-size:1.5em; font-weight:bold; color:#BA602B; cursor:pointer">프로그램 코드 보기</span></summary>  
+
     ### for문 사용법에 따른 1번째 예시 (1)  
-      
+    <div markdown="1">   
 ```python
 def solution(picture, k):
     answer = []
@@ -45,9 +45,10 @@ def solution(picture, k):
 
     return answer
 ```   
-      
+    </div>  
+    <br />
     ### for문 사용법에 따른 2번째 예시 (2)  
-
+    <div markdown="1">   
 ```python
 def solution(picture, k):
     answer = []
@@ -63,5 +64,5 @@ def solution(picture, k):
 
     return answer
 ```
-</div>
+    </div>
 </details>
