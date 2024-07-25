@@ -28,8 +28,7 @@ for문 사용법에 따른 2가지 방법이 있다.
 <details>
     <summary><span style="font-size:1.5em; font-weight:bold; color:#BA602B; cursor:pointer">프로그램 코드 보기</span></summary>  
     <div markdown="1">  
-    ### for문 사용법에 따른 1번째 예시 (1)  
-    <br />  
+### for문 사용법에 따른 1번째 예시 (1)  
 ```python
 def solution(picture, k):
     answer = []
@@ -45,9 +44,9 @@ def solution(picture, k):
 
     return answer
 ```
+<br />  
+### for문 사용법에 따른 2번째 예시 (2)
 
-    ### for문 사용법에 따른 2번째 예시 (2)
-    <br />  
 ```python
 def solution(picture, k):
     answer = []
@@ -63,5 +62,5 @@ def solution(picture, k):
 
     return answer
 ```
-    </div>
+</div>
 </details>
