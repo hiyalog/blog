@@ -32,15 +32,15 @@ for문 사용법에 따른 2가지 방법이 있다.
 ```python
 def solution(picture, k):
     answer = []
-    expand_str = ''
+    expand_pic = ''
     
     for p1 in picture: # picture 리스트변수에서 요소를 차례대로 가져와 p1에 넣어준다.
-        expand_str = '' # expand_str 변수를 초기화 한다.
+        expand_pic = '' # expand_str 변수를 초기화 한다.
         for p2 in p1: # p1 요소에 들어 있는 픽셀정보를 가져와 차례대로 p2 에 넣어준다.
             for e in range(k): # k배수 만큼 반복하며 p2에 있는 픽셀을 더해주어 가로로 늘린다.
-                expand_str += p2 
+                expand_pic += p2 
         for e in range(k): # 가로로 늘어난 픽셀정보를 k배만큼(세로) answer 리스트 변수에 추가 한다.
-            answer.append(expand_str)
+            answer.append(expand_pic)
 
     return answer
 ```
@@ -49,15 +49,15 @@ def solution(picture, k):
 ```python
 def solution(picture, k):
     answer = []
-    expand_str = ''
+    expand_pic = ''
     
     for i in range(len(picture)): # picture 각요소의 순서를 i에 넣어 준다.
-        expand_str = ''
+        expand_pic = ''
         for j in range(len(picture[i])): # 해당좌표의 픽셀 위치를 가져온다.
             for e in range(k): # k배 만큼 반복하며 해당좌표의 픽셀을 가로로 늘린다.
-                expand_str += picture[i][j] # 해당좌표의 픽셀 정보를 가져와 더해준다.
+                expand_pic += picture[i][j] # 해당좌표의 픽셀 정보를 가져와 더해준다.
         for e in range(k): # 가로로 늘어난 픽셀정보를 k배만큼(세로) answer 리스트 변수에 추가 한다.
-            answer.append(expand_str)
+            answer.append(expand_pic)
 
     return answer
 ```
