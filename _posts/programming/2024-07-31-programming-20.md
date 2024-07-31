@@ -47,8 +47,8 @@ def solution(sizes):
     for s in sizes:
         if(s[0] < s[1]): # s[1]이 크면 s[0]과 교환하여 s[0]에는 큰값 s[1]에는 작은값이 들어간다.
             s[0], s[1] = s[1], s[0] # s[0]과 s[1] 을 swap 한다.
-        if(x < s[0]): x = s[0] # x에는 s[0]에 있는값중 큰값
-        if(y < s[1]): y = s[1] # y에는 s[1]에 있는값중 큰값
+        if(x < s[0]): x = s[0] # x와 s[0]을 비교하여 큰값을 x에 넣는다.
+        if(y < s[1]): y = s[1] # y와 s[1]을 비교하여 큰값을 y에 넣는다.
    
     answer = x * y
     return answer
