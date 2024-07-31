@@ -24,6 +24,7 @@ s[0]값과 s[1]값을 비교하여 큰값을 s[0]에 작은값을 s[1]에 교환
 곱하여 answer 변수에 넣고 리턴하면 된다.  
 <br />
 < 예시 >  
+
 |원본 size ||교환된 size<br/>(왼쪽에는 큰값, 오른쪽에는 작은값으로 교환되었다)|
 |---|---|---|
 |[60, 50]| => |[60, 50] |
@@ -51,7 +52,6 @@ def solution(sizes):
     answer = x * y
     return answer
 ```  
-<br />  
 ### 두번째 코드 (리스트 변수 사용)  
 ```python
 def solution(sizes):
