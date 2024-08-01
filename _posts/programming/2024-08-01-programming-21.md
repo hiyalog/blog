@@ -20,10 +20,14 @@ tag:
 그래서, 이경우 안정 정렬(stable sort)방식으로 정렬하여야 먼저 사전순으로 정렬된 입력값이 
 n번째 위치값으로 재정렬후에도 섞이지 않고 조건에 따라 사전순으로 정렬된다.  
 
-안정정렬의 대표적인 방식으로 삽입정렬(Insertion Sort), 병합정렬(Merge Sort), 버블정렬(Bubble Sort)등이 있다.  
-이중에 삽입정렬(Insertion Sort) 방식으로 구현을 하였다.  
+|정렬방식|종류|
+|---|---|
+|안정 정렬(stable sort)|삽입정렬(Insertion Sort), 병합정렬(Merge Sort), 버블정렬(Bubble Sort) 등이 있다.|
+|불안정 정렬(Unstable Soring)|선택정렬(Selection Sort), 퀵정렬(Quick Sort), 힙정렬(Heap Sort) 등이 있다.|   
+
+이중에 안정 정렬(stable sort)방식에 속하는 삽입정렬(Insertion Sort)로 구현을 하였다.  
 <br />
-먼저 사전순으로 정렬할때 파이썬에 기본적으로 제공되는 내장함수중 sort()와 sorted() 함수가 있는데, 
+그리고, 사전순으로 정렬할때 파이썬에서 기본적으로 제공되는 내장함수중 sort()와 sorted() 함수가 있는데, 
 sort()함수는 원본 리스트값이 정렬된값으로 변경되지만 sorted()함수는 정렬된 새로운 리스트값을 반환해준다.  
 그래서, sorted()함수를 사용하여 원본 리스트값은 변경하지 않고 그대로 두고 사전순으로 정렬된 새로운 리스트값으로 재정렬하였다.  
 <br />
