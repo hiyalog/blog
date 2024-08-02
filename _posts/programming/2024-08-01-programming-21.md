@@ -44,10 +44,13 @@ def solution(strings, n):
 
     #삽입정렬(Insertion Sort)
     for i in range(1, len(new_s)):
-        for j in range(i, 0, -1):
-            if new_s[j-1][n] > new_s[j][n]:
-                new_s[j-1], new_s[j] = new_s[j], new_s[j-1]
-    
+        j = i - 1
+        key = new_s[i]
+        while new_s[j][n] > key[n] and j >= 0:
+            new_s[j+1] = new_s[j]
+            j = j - 1
+        new_s[j+1] = key
+        
     answer = new_s
     return answer
 ```
