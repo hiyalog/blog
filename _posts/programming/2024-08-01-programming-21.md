@@ -35,7 +35,8 @@ sort()함수는 원본 리스트값이 정렬된값으로 변경되지만 sorted
 
 <details>
     <summary><span style="font-size:1.5em; font-weight:bold; color:#BA602B; cursor:pointer">프로그램 코드 보기</span></summary>
-    <div markdown="1">   
+    <div markdown="1">  
+### 삽입정렬(Insertion Sort) 첫번째 방법  
 ```python
 def solution(strings, n):
     answer = []
@@ -53,6 +54,25 @@ def solution(strings, n):
             new_s[j] = new_s[j-1]
             j = j - 1
         new_s[j] = temp
+
+    answer = new_s
+    return answer
+```  
+### 삽입정렬(Insertion Sort) 두번째 방법  
+```python
+def solution(strings, n):
+    answer = []
+    j = 0
+
+    # new_s 리스트 변수에 정렬된 리스트가 들어간다.
+    new_s = sorted(strings) # sorted() 함수는 정렬된 새로운 리스트를 반환한다.
+
+    #삽입정렬(Insertion Sort)
+    for i in range(1, len(new_s)):
+        j = i
+        while new_s[j-1][n] > new_s[j][n] and j > 0:
+            new_s[j], new_s[j-1] = new_s[j-1], new_s[j] #앞자리와 바로바로 swap 해줘도 된다.
+            j = j - 1
 
     answer = new_s
     return answer
