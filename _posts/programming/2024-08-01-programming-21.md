@@ -32,6 +32,8 @@ sort()함수는 원본 리스트값이 정렬된값으로 변경되지만 sorted
 그래서, sorted()함수를 사용하여 원본 리스트값은 변경하지 않고 그대로 두고 사전순으로 정렬된 새로운 리스트값을 
 새로운 리스트변수 new_s 에 넣고 인덱스 n번째 글자를 기준으로 재정렬하였다.  
 <br />
+파이썬에서 삽입정렬(Insertion Sort)을 하는 2가지 방법중 어떤것이 속도가 더 빠른지는 모르겠다.
+<br />
 
 <details>
     <summary><span style="font-size:1.5em; font-weight:bold; color:#BA602B; cursor:pointer">프로그램 코드 보기</span></summary>
