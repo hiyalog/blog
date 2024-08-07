@@ -21,6 +21,9 @@ tag:
 zfill() 함수를 사용하면 앞자리를 0으로 채워줄 수 있다.  
 2진수로 변환된값을 zfill() 함수로 빈자리는 0으로 채운뒤 1은 '#'으로 0은 공백으로 
 변환해 주면 된다.  
+
+2진수로 변환할때 bin() 함수는 앞에 '0b' 라는 2진수표시 문자가 붙기 때문에 
+format() 함수를 사용하면 '0b'라는 2진수 표시문자 없이 2진수값만 표시할 수 있다.  
 <br />
 <details>
     <summary><span style="font-size:1.5em; font-weight:bold; color:#BA602B; cursor:pointer">프로그램 코드 보기</span></summary>
