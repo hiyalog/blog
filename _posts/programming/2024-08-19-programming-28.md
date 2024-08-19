@@ -9,20 +9,20 @@ tag:
 
 ## 최빈값 구하기  
 
-딕셔너리의 최빈값을 구하기 위해 사용한 함수로
-배열원소의 갯수를 카운트 하는 count() 함수와   
-딕셔너리를 정렬하기 위해서 lambda 함수를 사용했다.
+딕셔너리의 최빈값을 구하기 위해 사용한 함수로 
+배열원소의 갯수를 카운트 하는 count() 함수와 
+딕셔너리를 정렬하기 위해서 lambda 함수를 사용했다.  
 <br>
 arr.value() 나 arr.key() 를 정렬하면 value값이나 key값만 정렬이 되어 반환이 된다.  
 딕셔너리 자체를 정렬할려면 arr.items()를 사용해야 하는데 sorted(arr.items())를 하면 
-key 값으로 정렬이 된다. 그래서 배열원소의 갯수가 들어있는 value 값으로 정렬하려면 
-lambda 함수를 사용해야 하는데 다음과 같이 사용할 수 있다.  
-lambda x: x[0]  => 딕셔너리를 key값으로 정렬한다.
+key 값으로 정렬이 되는데, 배열원소의 갯수가 들어있는 value 값으로 정렬하기 위해 
+lambda 함수를 사용하여 정렬했는데 사용법은 다음과 같다.  
+lambda x: x[0]  => 딕셔너리를 key값으로 정렬한다.  
 lambda x: x[1]  => 딕셔너리를 value값으로 정렬 한다.  
 여기서 -x[1] 이런식으로 앞에 (-) 부호를 붙이면 내림차순으로 졍렬을 할 수 있는데, 
 reverse=True 옵션과 같다.  
 사용 예)  
-(1) arr = sorted(arr.items(), key=lambda x:-x[1])
+(1) arr = sorted(arr.items(), key=lambda x:-x[1])  
 (2) arr = sorted(arr.items(), key=lambda x:x[1], reverse=True)  
 2개다 같은 결과가 나온다.  
 <br>
@@ -31,7 +31,7 @@ reverse=True 옵션과 같다.
 이것은 중요하다고 생각하는데 딕셔너리 자료형을 sorted() 함수로 정렬을 하면 
 list 자료형으로 반환되어 딕셔너리의 key나 value 형식으로 자료를 가져올 수 없다.  
 list 자료형으로 사용해야 한다.  
-arr[0][0]  => 2차원 list 자료형의 첫번째 값의 첫번째 요소
+arr[0][0]  => 2차원 list 자료형의 첫번째 값의 첫번째 요소  
 arr[0][1]  => 2차원 list 자료형의 첫번째 값의 두번째 요소  
 <br>
 
