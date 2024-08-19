@@ -42,7 +42,9 @@ arr[0][1]  => 2차원 list 자료형의 첫번째 값의 두번째 요소
 def solution(array):
     answer = 0
     arr = {}
-    
+
+    # 딕셔너리 자료형으로 저장하면 중복된 요소는 제거되고 저장된다.
+    # arr 딕셔너리 배열에는 array 배열에서 중복된 요소가 제거된 값이 저장된다.
     for i in array: # value값이 0으로 초기화 된 dictionary(arr) 생성 (key:value) 
         arr[i] = 0
 
