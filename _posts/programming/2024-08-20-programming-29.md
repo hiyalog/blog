@@ -19,7 +19,7 @@ tag:
 - st_answers : 학생 답안지  
 - st_result : 정답갯수 저장 변수  
 - rep_len : 패턴 반복 횟수 저장 변수  
-<br>
+
 |순서|내용|
 |---|---|
 |1|수포자 패턴을 딕셔너리 자료형으로 만든다. (학생과 패턴을 연결하기 위해서)|
@@ -29,8 +29,7 @@ tag:
 |5|st_result에 저장된 정답갯수중 최대값을 구한다.( max()함수 사용 )|
 |6|st_result에 저장된 정답갯수와 최대값을 비교하여 같으면 answer 배열에 저장한다.|
 |7|answer배열을 오름차순으로 정렬하여 리턴한다.|
-|8|[주의할점] 매개변수 answers와 지역변수 answer가 이름이 비슷하다.  
-   매개변수(정답지)에는 끝자리에 s자가 붙었다.|
+|8|[주의할점] 매개변수 answers와 지역변수 answer가 이름이 비슷하다.<br> 매개변수(정답지)에는 끝자리에 s자가 붙었다.|
 <br>
 <details>
   <summary><span style="font-size:1.5em; font-weight:bold; color:#BA602B; cursor:pointer">프로그램 코드 보기</span></summary>
