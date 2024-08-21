@@ -84,7 +84,7 @@ def solution(num, total):
     a1 = int((((total*2)/num) - (num-1)) / 2)
     
     for i in range(num): # num 갯수 만큼 반복(i는 0부터 num-1까지 반복한다.)
-        answer.append(i+a1) # 1항의 값(a1)에 i를 순서대로 더해서 추가한다.
+        answer.append(a1+i) # 1항의 값(a1)에 i를 순서대로 더해서 추가한다.
     
     return answer
 ```
