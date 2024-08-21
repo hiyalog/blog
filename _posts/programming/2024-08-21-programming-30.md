@@ -33,7 +33,7 @@ tag:
 |4|공차가 1 이기때문에 마지막항(an)은 (1항+(항의개수-1))과 같다.<br>수식으로 적어보면<br><b>an = a1 + (num-1)</b>|
 |5|<b>sum = a1 + an</b> 은<br> <b>sum = a1 + (a1+(num-1))</b> 와 같다.|  
 
-#### 수식을 정리해 보면  
+#### 수식을 정리해 보면 
 
 ||내용|
 |---|---|
@@ -46,8 +46,8 @@ tag:
 |7|sum은 1항과 마지막항을 더한값으로<br><b>((total * 2) / num)</b> 식이다.|
 |8|<b>a1 = (((total * 2)/num) - (num-1)) / 2</b>|
 |9|이렇게 하면 a1 즉, 1항값을 구할 수 있다.|
-|10|이제 a1 부터 num 만큼 반복하면서 answer 배열에 넣어주고 리턴하면 된다.|
-<br>
+|10|이제 a1 부터 num 만큼 반복하면서 answer 배열에 넣어주고 리턴하면 된다.|  
+<br> 
 
 <details>
     <summary><span style="font-size:1.5em; font-weight:bold; color:#BA602B; cursor:pointer">프로그램 코드 보기</span></summary>
