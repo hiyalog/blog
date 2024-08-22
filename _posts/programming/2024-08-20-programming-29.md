@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "[Python] 모의고사"
+title: "[Python] 모의고사 (2024-08-22 : 수정-코드 추가)"
 categories:
   - programming
 tag:
@@ -8,6 +8,9 @@ tag:
 ---  
 
 ## 모의고사
+
+다른 풀이방법을 보고 더 나은 방법이란 생각이 들이서  
+기존코드를 수정하고 수정된 코드도 다시 올렸다.
 
 문제 풀이는 다음순서로 풀었다.  
 <br>
@@ -32,7 +35,8 @@ tag:
 <br>
 <details>
   <summary><span style="font-size:1.5em; font-weight:bold; color:#BA602B; cursor:pointer">프로그램 코드 보기</span></summary>
-  <div markdown="1">   
+  <div markdown="1">  
+#### 처음 작성한 코드  
 ```python
 def solution(answers):
     answer = []
@@ -77,6 +81,31 @@ def solution(answers):
 
     # 가장 높은 점수를 받은 사람이 여럿일 경우 오름차순 정렬하여 리턴한다.
     answer.sort()
+    return answer
+```
+#### 새로 수정한 코드 (2024-08-22)
+```python
+def solution(answers):
+    answer = []
+    
+    p1 = [1, 2, 3, 4, 5] #수포자 패턴 1 (5개)
+    p2 = [2, 1, 2, 3, 2, 4, 2, 5] #수포자 패턴 2 (8개)
+    p3 = [3, 3, 1, 1, 2, 2, 4, 4, 5, 5] #수포자 패턴 3 (10개)
+    st = {1:p1, 2:p2, 3:p3} # 각 학생의 정답패턴을 딕셔너리 자료형으로 만든다.
+    st_result = {} # 정답갯수를 저장할 변수로 딕셔너리로 선언
+
+    for i in st:
+        st_result[i] = 0
+        for j in range(len(answers)):
+            if answers[j] == st[i][j % len(st[i])]: # 정답비교
+                st_result[i] += 1
+
+    max_answer = max(st_result.values())
+    for i in st_result:
+        if max_answer == st_result[i]: # 최대값과 st_result[i]의 value 값이 같을 경우 answer 배열에 key값을 추가한다.
+            answer.append(i) # i값은 딕셔너리 자료형 st_result의 key값 이다
+
+    answer.sort() # 가장 높은 점수를 받은 사람이 여럿일 경우 오름차순 정렬
     return answer
 ```
   </div>
